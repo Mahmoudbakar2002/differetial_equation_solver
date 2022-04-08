@@ -15,6 +15,6 @@ program solve equation and classification it
   |'x/y'    | x division by y |
   |'x^y'    | x <sup>y</sup>  |
   |'âˆš(x)' |square root of x |
-  |'Ï€'     | PI              |
+  |'$\Pi$'     | PI              |
 	
 ## program feauture: 

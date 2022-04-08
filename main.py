@@ -62,10 +62,10 @@ def live_plot_eqution(text):
     #print(text)
     xt=equation_maliplation_sympy(text)
     tmptext = "$ \\frac{dy}{dx} ="+latex(sympify(xt))+"$"
-    
+    tmptext=tmptext.replace("log","ln")
     ax_entered_equation.clear()
     ax_entered_equation.set_title("Entered Equation:")
-    ax_entered_equation.text(0.05, 0.45, tmptext, fontsize=20)  
+    ax_entered_equation.text(0.05, 0.45, tmptext, fontsize=18)  
     canvas.draw()
     
 
@@ -106,9 +106,10 @@ def de():
     #----- View latex solution
     txte = latex(solution)
     txte = "$"+txte+"$"
+    txte=txte.replace("log","ln")
     ax_solution.clear()
     ax_solution.set_title("Solution:")
-    ax_solution.text(0.05, 0.45, txte, fontsize=20)  
+    ax_solution.text(0.05, 0.45, txte, fontsize=18)  
     canvas.draw()
     
 def set_equation_proparteies_state(props):

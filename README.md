@@ -1,11 +1,13 @@
 # differetial_equation_solver
 project for solve differetial equation using python
 program solve equation and classification it
+![alt text](http://url/to/img.png)
 
 ## How to use:
-  1.first you should enter your equation in text field <a href="#">how to write equation</a>
+  1.first you should enter your equation in text field <a href="#write-equation">how to write equation</a>
   
-## How to write equation:
+<h2 id="write-equation">How to write equation:</h2>
+
   program use standard sympols to write equation as:
   |sympol   |equalivent to    |
   |---------|-----------------|
@@ -14,7 +16,7 @@ program solve equation and classification it
   |'x*y'    |x multiply y     |
   |'x/y'    | x division by y |
   |'x^y'    | x <sup>y</sup>  |
-  |'âˆš(x)' |square root of x |
-  |'$\Pi$'     | PI              |
+  |'&#8730;(x)' |square root of x |
+  |'&pi;'     | PI              |
 	
 ## program feauture: 

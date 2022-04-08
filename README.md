@@ -1,7 +1,12 @@
 # differetial_equation_solver
 project for solve differetial equation using python
 program solve equation and classification it
-![alt text](http://url/to/img.png)
+
+before enter equation<br/>
+![alt text](https://github.com/Mahmoudbakar2002/differetial_equation_solver/blob/main/screenshot/screenshot1.PNG)
+
+after enterd equation<br/>
+![alt text](https://github.com/Mahmoudbakar2002/differetial_equation_solver/blob/main/screenshot/screenshot2.PNG)
 
 ## How to use:
   1.first you should enter your equation in text field <a href="#write-equation">how to write equation</a>

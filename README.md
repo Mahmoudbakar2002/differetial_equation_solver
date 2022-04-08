@@ -7,6 +7,7 @@ program solve equation and classification it
   1.first you should enter your equation in text field <a href="#write-equation">how to write equation</a>
   
 <h2 id="write-equation">How to write equation:</h2>
+  
   program use standard sympols to write equation as:
   |sympol   |equalivent to    |
   |---------|-----------------|

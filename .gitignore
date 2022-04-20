@@ -131,3 +131,6 @@ dmypy.json
 
 .project
 .pydevproject
+
+old/
+test.py

@@ -35,7 +35,12 @@ def get_differential_equation(equation):
 def solve_equation(equation):
     diffeq=get_differential_equation(equation)         
     return dsolve(diffeq,equation_y_of_x)
+def remove_constants(equation,fx,x):
+    sol=Eq(equation.subs("x",x).rhs,fx)
 
+    con=solve([sol])
+    return  equation.subs(con)
+    
 def get_proparteies_classifcation(equation):
     diffeq=get_differential_equation(equation)            
     # print(classify_ode(diffeq))

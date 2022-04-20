@@ -17,6 +17,7 @@ import tkinter.font as font
 
 from widgets.tooltip import *
 from widgets.dialogs import *
+from graphdialog import  *
 
 #------ matploit ---------------------
 import matplotlib
@@ -117,12 +118,20 @@ class Root:
         CreateToolTip(Button_help,infoTxt)
         
         
-         #--------------- info Button ---------------------------- 
+         #--------------- info Button ----------------------------
+        def onClickGraph():
+            eqs=self.solve_function(self.entry)
+            if len(eqs)==0:return
+            
+            graphDialog = GraphDialog(self.frame,eqs[0],eqs[1])
+            self.frame.wait_window(graphDialog.graph_window)
+        
+          
         graph_img = PhotoImage(file='img\graph.png')
         buttion_graph=ttk.Button(equation_box,
                                  image=graph_img,
                                 style="Accent.TButton" ,
-                                command = lambda: print("Graph"))
+                                command = onClickGraph)
         buttion_graph.image = graph_img
         buttion_graph.place(x=515,y=5,width=55,height=30)
        

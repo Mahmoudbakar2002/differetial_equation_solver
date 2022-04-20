@@ -54,14 +54,14 @@ def de(entry):
         worried = PhotoImage(file='img\worried2.png')
         show_message("Error in Equation", "you enter wrong equatoin in y'.\nCheck your entered equation.",icon=worried)
 
-        return 
+        return []
     
     
     # live_plot_eqution(expr)
     equation=equation_maliplation_sympy(expr)
+    equation=sympify(equation)
     # print(expr)
-    
-    origin_equation  = "$ \\frac{dy}{dx} ="+latex(sympify(equation))+"$"
+    origin_equation  = "$ \\frac{dy}{dx} ="+latex(equation)+"$"
     solution = solve_equation(equation)
     
     #-------- Proparteies -----------
@@ -90,7 +90,7 @@ def de(entry):
     
     # --- Draw cnvas after type equation in matploit
     rootframe.canvas.draw()
-    
+    return [equation,solution]
 def change_theme():
     # NOTE: The theme's real name is sun-valley-<mode>
     # print(agreement.get())

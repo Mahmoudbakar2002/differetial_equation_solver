@@ -76,8 +76,8 @@ def de(entry):
     # print(origin_equation)
     rootframe.ax_entered_equation.clear()
     rootframe.ax_entered_equation.set_title("Entered Equation:",color=rootframe.title_plot_color)
-    rootframe.ax_entered_equation.text(0.5, 0.5, txte, horizontalalignment='center',
-    verticalalignment='center', transform=rootframe.ax_entered_equation.transAxes,fontsize='large')  
+    rootframe.ax_entered_equation.text(0.5, 0.5, origin_equation, horizontalalignment='center',
+    verticalalignment='center', transform=rootframe.ax_entered_equation.transAxes,fontsize='medium')  
     
     #----- View latex solution
     # print(solution)
@@ -88,7 +88,7 @@ def de(entry):
     rootframe.ax_solution.clear()
     rootframe.ax_solution.set_title("Solution:",color=rootframe.title_plot_color)
     rootframe.ax_solution.text(0.5, 0.5, txte, horizontalalignment='center',
-    verticalalignment='center', transform=rootframe.ax_solution.transAxes,fontsize='large')  
+    verticalalignment='center', transform=rootframe.ax_solution.transAxes,fontsize='medium')  
     
     # --- Draw cnvas after type equation in matploit
     rootframe.canvas.draw()
